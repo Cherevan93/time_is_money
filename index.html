@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Time is money</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
@@ -34,17 +35,25 @@
         <div class="slider">
             <div id="viewport">
                 <ul id="slide-wrapper">
-                    <li class="slide"><img src="img/1.jpg" alt="1" class="slide-img"></li>
-                    <li class="slide"><img src="img/2.jpg" alt="2" class="slide-img"></li>
-                    <li class="slide"><img src="img/3.jpg" alt="3" class="slide-img"></li>
+                    <li class="slide">
+                        <div class="slide-img"></div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"></div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"></div>
+                    </li>
                 </ul>
             </div>
             <div class="slider-content">
-                <h1 class="slider-content__header">This is a main heading</h1>
-                <p class="slider-content__text">Lorem Ipsum is simply dummy text <br/> of the printing</p>
-                <button class="slider-content__button">Learn More</button>
-                <i class="fa fa-angle-left" aria-hidden="true" id="prev-btn"></i>
-                <i class="fa fa-angle-right" aria-hidden="true" id="next-btn"></i>
+                <div class="slider-block">
+                    <h1 class="slider-content__header">This is a main heading</h1>
+                    <p class="slider-content__text">Lorem Ipsum is simply dummy text <br/> of the printing</p>
+                    <button class="slider-content__button">Learn More</button>
+                    <i class="fa fa-angle-left" aria-hidden="true" id="prev-btn"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true" id="next-btn"></i>
+                </div>
             </div>
         </div>
     </header>
