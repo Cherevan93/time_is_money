@@ -11,6 +11,17 @@ $(document).ready(function () {
     $('#prev-btn').click(function() {
         prevSlide();
     });
+
+    $('.price-item__button').hover(
+        function(){
+            $(this).addClass('active_button');
+            $(this).siblings('.price-item__header').addClass('active_header');
+        },
+        function(){
+            $(this).removeClass('active_button');
+            $(this).siblings('.price-item__header').removeClass('active_header');
+        }
+    );
 });
 
 function nextSlide() {
@@ -47,3 +58,4 @@ function prevSlide() {
         slideNow--;
     }
 }
+
