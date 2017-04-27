@@ -49,10 +49,12 @@ $(document).ready(function () {
     $(document).mouseup(function (e) {
         var div = $("#header-menu");
         var h = $("#menu-btn");
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
-            if (!h.is(e.target) && h.has(e.target).length === 0) {
-                div.hide();
-                $('.slider').animate({marginTop: 50}, 500);
+        if ($(window).width() <= 620) {
+            if (!div.is(e.target) && div.has(e.target).length === 0) {
+                if (!h.is(e.target) && h.has(e.target).length === 0) {
+                    div.hide();
+                    $('.slider').animate({marginTop: 50}, 500);
+                }
             }
         }
     });
