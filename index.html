@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <link rel="stylesheet/less" href="css/styles.less">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="script/jquery-3.2.1.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -36,13 +33,13 @@
             <div id="viewport">
                 <ul id="slide-wrapper">
                     <li class="slide">
-                        <div class="slide-img"></div>
+                        <div class="slide-img slide-one"></div>
                     </li>
                     <li class="slide">
-                        <div class="slide-img"></div>
+                        <div class="slide-img slide-two"></div>
                     </li>
                     <li class="slide">
-                        <div class="slide-img"></div>
+                        <div class="slide-img slide-three"></div>
                     </li>
                 </ul>
             </div>
@@ -60,9 +57,10 @@
 </div>
 
 <main>
-    <a id="team"></a>
+
     <div class="wrapper">
         <div class="inside-wrapper">
+            <a id="team" class="anchor"></a>
             <div class="our-team">
                 <h3 class="our-team__header">The Team</h3>
                 <ul class="justify-list">
@@ -102,7 +100,7 @@
             </div>
         </div>
     </div>
-    <a id="service"></a>
+    <a id="service" class="anchor"></a>
     <div class="wrapper price">
         <div class="inside-wrapper">
             <ul class="justify-list">
@@ -150,7 +148,7 @@
     </div>
 </main>
 <footer>
-    <a id="contact"></a>
+    <a id="contact"  class="anchor"></a>
     <div class="wrapper footer-bg">
         <div class="inside-wrapper">
             <div class="contacts">
@@ -188,7 +186,6 @@
         </div>
     </div>
 </footer>
-
 <script src="script/script.js"></script>
 </body>
 </html>
